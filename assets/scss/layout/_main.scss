@@ -1,0 +1,22 @@
+// import aside side of main...
+@import '_aside.scss';
+
+
+main{
+	position: relative;
+	min-height: calc(100% - #{$navbarHeight});
+}
+
+section.contents{
+	width: calc(100% - #{$leftSideBarWidth});
+	margin-left: auto;
+	z-index: 2;
+    padding: $inner-spacing;
+    min-height: 100%;
+	.inner-sections{
+		margin-bottom: $inner-spacing;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}

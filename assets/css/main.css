@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_reset.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #EFF3F6;
+}
+
+/* line 12, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_reset.scss */
+body {
+  min-height: 100vh;
+}
+
+/* line 16, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_reset.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 20, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_reset.scss */
+a {
+  text-decoration: none;
+  color: #FDAD2A;
+}
+
+/* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_base.scss */
+.m-auto {
+  margin: 0 auto;
+}
+
+/* line 5, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_base.scss */
+.w-100p {
+  width: 100%;
+}
+
+/* line 8, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/base/_base.scss */
+.dis-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 3, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_header.scss */
+header nav {
+  height: 77px;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 9, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_header.scss */
+header .collapse.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+aside {
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+  z-index: 3;
+  background: #FFFFFF;
+}
+
+/* line 13, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+aside .btn {
+  border-radius: 0;
+}
+
+/* line 5, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_main.scss */
+main {
+  position: relative;
+  min-height: calc(100% - 77px);
+}
+
+/* line 10, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_main.scss */
+section.contents {
+  width: calc(100% - 250px);
+  margin-left: auto;
+  z-index: 2;
+  padding: 30px;
+  min-height: 100%;
+}
+
+/* line 16, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_main.scss */
+section.contents .inner-sections {
+  margin-bottom: 30px;
+}
+
+/* line 18, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_main.scss */
+section.contents .inner-sections:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 3, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_typography.scss */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 4, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card .card-header {
+  padding: 15px 15px 0;
+  background-color: #FFFFFF;
+  border-bottom: none;
+}
+
+/* line 9, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card .card-block {
+  padding: 15px;
+}
+
+/* line 12, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card .card-body {
+  padding: 0 15px 15px;
+}
+
+/* line 15, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card.card-green {
+  background: #46C35F;
+}
+
+/* line 18, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card.card-red {
+  background: #FA424A;
+}
+
+/* line 21, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card.card-purple {
+  background: #AC6BEC;
+}
+
+/* line 24, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+.card.card-orange {
+  background: #FDAD2A;
+}
+
+/*# sourceMappingURL=../css/main.map */

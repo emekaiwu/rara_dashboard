@@ -1,0 +1,13 @@
+header{
+
+    nav{
+        height: $navbarHeight;
+        position: fixed;
+        width: 100%;
+    }
+
+    .collapse.navbar-collapse {
+        justify-content: flex-end;
+    }
+    
+}
