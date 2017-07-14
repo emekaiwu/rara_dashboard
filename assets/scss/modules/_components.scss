@@ -19,10 +19,10 @@
         background: $brand-red;
     }
     &.card-purple{
-        background: $brand-purple;
+        background: $secondary-color;
     }
      &.card-orange{
-        background: $brand-orange;
+        background: $primary-color;
     }
     @media(max-width: 425px){
         margin-bottom: 15px;

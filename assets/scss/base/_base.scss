@@ -38,3 +38,30 @@
 .bg-google{
     background:$google;
 }
+
+.alert-primary{
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    color: #FFF !important;
+}
+.alert-secondary{
+    background-color: $secondary-color !important;
+    border-color:  $secondary-color !important;
+    color: #FFF !important;
+}
+
+.alert-danger{
+    background-color: $brand-red !important;
+    border-color: $brand-red !important;
+    color: #FFF !important;
+}
+.alert-success{
+    background-color: $brand-green !important;
+    border-color: $brand-green !important;
+    color: #FFF !important;
+}
+.alert-dark{
+    background-color: $brand-dark !important;
+    border-color: $brand-dark !important;
+    color: #FFF !important;
+}

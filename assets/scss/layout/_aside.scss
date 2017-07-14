@@ -40,7 +40,7 @@
 			}
 		}
 		&.active  a {
-			color: $brand-orange;
+			color: $primary-color;
 			opacity: 1;
 			// background: rgba(243, 246, 248, 0.75);
 			font-weight: 900;
@@ -54,7 +54,7 @@
 				position: absolute;
 				width: 3px;
 				z-index: 1000;
-				background: $brand-orange;
+				background: $primary-color;
 			}
 		}
 	}
@@ -80,6 +80,9 @@
 	@extend .menus;
 	@media(max-width: 991px){
 		height: 100% !important;
+	}
+	@media(min-width: 991px){
+		display: none;
 	}
 }
 

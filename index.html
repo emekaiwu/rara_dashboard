@@ -256,6 +256,8 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="assets/plugins/jquery-2.2.3.min.js"></script>
+  <!-- notify js -->
+  <script type="text/javascript" src="assets/plugins/bootstrap-notify.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="assets/plugins/tether/js/tether.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -269,6 +271,8 @@
 
     $(document).ready(function(){
 		app.sidebarController();
+		app.showNotification('bottom', 'right', 'Stranger');
+
 	});
 
   </script>
