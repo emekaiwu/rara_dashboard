@@ -96,7 +96,77 @@ header .collapse.navbar-collapse {
 }
 
 /* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside {
+.menus, .leftSideBar, .rightSideBar {
+  margin-bottom: 0;
+}
+
+/* line 5, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li a, .leftSideBar li a, .rightSideBar li a {
+  color: #222222;
+  border-radius: 0px;
+  padding: 0px;
+  display: block;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+/* line 15, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li a i, .leftSideBar li a i, .rightSideBar li a i {
+  padding: 8px 0px;
+  font-size: 20px;
+  float: left;
+  margin-right: 15px;
+  line-height: 30px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+}
+
+/* line 25, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li a i .badge, .leftSideBar li a i .badge, .rightSideBar li a i .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 15px;
+  border-radius: 50%;
+}
+
+/* line 33, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li a p, .leftSideBar li a p, .rightSideBar li a p {
+  margin: 0;
+  margin: 0;
+  line-height: 30px;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 8px 0px;
+}
+
+/* line 42, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li.active a, .leftSideBar li.active a, .rightSideBar li.active a {
+  color: #FDAD2A;
+  opacity: 1;
+  font-weight: 900;
+  position: relative;
+}
+
+/* line 48, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.menus li.active a:before, .leftSideBar li.active a:before, .rightSideBar li.active a:before, .menus li.active a:after, .leftSideBar li.active a:after, .rightSideBar li.active a:after {
+  bottom: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 3px;
+  z-index: 1000;
+  background: #FDAD2A;
+}
+
+/* line 62, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+.leftSideBar {
   width: 250px;
   position: absolute;
   left: 0px;
@@ -109,98 +179,31 @@ aside {
   background: #FFFFFF;
 }
 
-/* line 13, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus {
-  margin-bottom: 0;
-}
-
-/* line 17, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li a {
-  color: #222222;
-  border-radius: 0px;
-  padding: 0px;
-  display: block;
-  -webkit-transition: all 150ms ease-in;
-  -moz-transition: all 150ms ease-in;
-  -o-transition: all 150ms ease-in;
-  -ms-transition: all 150ms ease-in;
-  transition: all 150ms ease-in;
-}
-
-/* line 27, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li a i {
-  padding: 8px 0px;
-  font-size: 20px;
-  float: left;
-  margin-right: 15px;
-  line-height: 30px;
-  width: 70px;
-  text-align: center;
-  position: relative;
-}
-
-/* line 37, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li a i .badge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  left: 15px;
-  border-radius: 50%;
-}
-
-/* line 45, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li a p {
-  margin: 0;
-  margin: 0;
-  line-height: 30px;
-  font-size: 12px;
-  text-transform: capitalize;
-  padding: 8px 0px;
-}
-
-/* line 54, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li.active a {
-  color: #FDAD2A;
-  opacity: 1;
-  font-weight: 900;
-  position: relative;
-}
-
-/* line 60, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-aside .menus li.active a:before, aside .menus li.active a:after {
-  bottom: 0;
-  top: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 3px;
-  z-index: 1000;
-  background: #FDAD2A;
-}
-
 @media (max-width: 991px) {
-  /* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-  aside {
+  /* line 62, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  .leftSideBar {
     display: none;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 80, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-  .navbar-collapse.collapse {
+  /* line 79, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  .rightSideBar {
     height: 100% !important;
   }
-  /* line 84, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-  .nav-open .navbar-collapse {
+}
+
+@media (max-width: 991px) {
+  /* line 89, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  .nav-open .rightSideBar {
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
     -o-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
     transform: translate3d(0px, 0, 0);
   }
-  /* line 91, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
-  body > .navbar-collapse {
+  /* line 96, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  body > .rightSideBar {
     position: fixed;
     display: block;
     top: 0;
@@ -209,7 +212,7 @@ aside .menus li.active a:before, aside .menus li.active a:after {
     right: 0;
     z-index: 1032;
     visibility: visible;
-    background-color: #999;
+    background: #FFFFFF;
     overflow-y: visible;
     border-top: none;
     text-align: left;
@@ -225,7 +228,7 @@ aside .menus li.active a:before, aside .menus li.active a:after {
     -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
-  /* line 117, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  /* line 122, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
   .nav-open .wrapper {
     left: 0;
     -webkit-transform: translate3d(-250px, 0, 0);
@@ -234,7 +237,7 @@ aside .menus li.active a:before, aside .menus li.active a:after {
     -ms-transform: translate3d(-250px, 0, 0);
     transform: translate3d(-250px, 0, 0);
   }
-  /* line 126, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  /* line 131, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
   .wrapper {
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
@@ -248,7 +251,7 @@ aside .menus li.active a:before, aside .menus li.active a:after {
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     position: relative;
   }
-  /* line 140, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
+  /* line 145, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_aside.scss */
   #bodyClick {
     height: 100%;
     width: 100%;
@@ -318,6 +321,7 @@ section.contents .stats .stat {
   /* line 13, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/layout/_main.scss */
   section.contents {
     width: 100%;
+    padding: 15px;
   }
 }
 
@@ -367,6 +371,13 @@ body {
 /* line 24, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
 .card.card-orange {
   background: #FDAD2A;
+}
+
+@media (max-width: 425px) {
+  /* line 1, C:/Users/USER/Documents/Repos/rare_dashboard/assets/scss/modules/_components.scss */
+  .card {
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=../css/main.map */

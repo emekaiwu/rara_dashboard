@@ -26,15 +26,15 @@ var app = {
               
             
               //add the content from the regular header to the right menu
-              $navbar.children('ul').each(function(){
-                  ul_content +=   $(this).html();  
-              });
+            //   $navbar.children('ul').each(function(){
+            //       ul_content +=   $(this).html();  
+            //   });
               
-              ul_content = '<ul class="menus">' + ul_content + '</ul>';
+              ul_content = '<aside class="rightSideBar"><ul class="menus">' + ul_content + '</ul></aside>';
                 
-              $navbar.html(ul_content);
+             // $navbar.html(ul_content);
               
-              $('body').append($navbar);
+              $('body').append(ul_content);
               
               
               

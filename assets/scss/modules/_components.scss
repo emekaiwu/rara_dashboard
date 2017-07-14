@@ -24,4 +24,7 @@
      &.card-orange{
         background: $brand-orange;
     }
+    @media(max-width: 425px){
+        margin-bottom: 15px;
+    }
 }
