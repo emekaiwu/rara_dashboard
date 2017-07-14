@@ -4,9 +4,12 @@
 
 main{
 	position: relative;
-	min-height: calc(100% - #{$navbarHeight});
+	max-height: calc(100% - #{$navbarHeight});
+	height: 100%;
 }
 
+
+// main other side, aside from aside tag
 section.contents{
 	width: calc(100% - #{$leftSideBarWidth});
 	margin-left: auto;
@@ -18,5 +21,26 @@ section.contents{
 		&:last-of-type{
 			margin-bottom: 0;
 		}
+	}
+	.stats{
+		letter-spacing: 2px;
+		color: #FFFFFF;
+		text-align: center;
+		hr{
+			background: #FFFFFF;
+			margin: 20px auto;
+		}
+		.figures{
+			font-size: 40px;
+			// letter-spacing: 1px;
+			font-weight: 900;
+		}
+		.stat{
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+	@media (max-width: 991px){
+		width: 100%;
 	}
 }

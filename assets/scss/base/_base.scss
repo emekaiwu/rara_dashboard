@@ -2,6 +2,14 @@
     margin: 0 auto;
 }
 
+.w-25p{
+    width: 25%;
+}
+
+.w-50p{
+    width: 50%;
+}
+
 .w-100p{
     width: 100%;
 }
@@ -10,4 +18,23 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.bg-facebook, .bg-google, .bg-instagram, .bg-twitter{
+    color: #FFF !important;
+    font-weight: 700;
+}
+
+.bg-facebook{
+    background: $facebook;
+}
+.bg-twitter{
+    background:$twitter;
+}
+
+.bg-instagram{
+    background:$instagram;
+}
+.bg-google{
+    background:$google;
 }

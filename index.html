@@ -19,22 +19,22 @@
 </head>
 
 <body>
-
+	<div class="wrapper">
 	<header>
 		<!--Navbar-->
 		<nav class="navbar navbar-toggleable-md navbar-dark black">
 		    <div class="container w-100p">
-		        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseEx2" aria-controls="collapseEx2" aria-expanded="false" aria-label="Toggle navigation">
+		        <button class="navbar-toggler navbar-toggler-right" type="button"  aria-expanded="false" aria-label="Toggle navigation">
 		            <span class="navbar-toggler-icon"></span>
 		        </button>
 		        <a class="navbar-brand" href="index.html">
 		            <img src="#" class="d-inline-block align-top z-depth-0 img-fluid" alt="[LOGO]">
 		        </a>
 	        <!-- float button to the left with margin-left auto -->
-		        <div class="collapse navbar-collapse text-right" id="collapseEx2">
+		        <div class="collapse navbar-collapse text-right">
 					<ul class="navbar-nav ml-auto text-center">
 						<li class="nav-item">
-							<a href="report.html" class="btn btn-danger btn-lg mr-auto hidden-xs" >Profile view</a>
+							<a href="report.html" class="btn btn-danger mr-auto" >Profile view</a>
 						</li>
 					</ul>
 		        </div>
@@ -48,7 +48,7 @@
 		<aside class="leftSideBar">
 			<div class="sidebar-wrapper">
 				<ul class="menus">
-					<li>
+					<li class="active">
 						<a href="dashboard.html">
 							<i class="fa fa-cube" aria-hidden="true"></i>
 							<p>Dashboard</p>
@@ -68,8 +68,14 @@
 					</li>
 					<li>
 						<a href="services.html">
-							<i class="fa fa-heart" aria-hidden="true"></i>
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
 							<p>Services</p>
+						</a>
+					</li>
+					<li>
+						<a href="users.html">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<p>Users</p>
 						</a>
 					</li>
 					<li>
@@ -80,7 +86,9 @@
 					</li>
 					<li>
 						<a href="message.html">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-envelope-o" aria-hidden="true">
+								<span class="badge badge-danger">5</span>
+							</i>
 							<p>Message</p>
 						</a>
 					</li>
@@ -91,11 +99,32 @@
 						</a>
 					</li>
 				</ul>
-				<ul class="social-list">
-					<li><a class="btn btn-block btn-primary">Facebook</a></li>
-					<li><a class="btn btn-block btn-primary">Facebook</a></li>
-					<li><a class="btn btn-block btn-primary">Facebook</a></li>
-					<li><a class="btn btn-block btn-primary">Facebook</a></li>
+				<ul class="social-list menus">
+					<li>
+						<a class="bg-facebook">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<p>384 Likes</p>
+						</a>
+					</li>
+					<li>
+						<a class="bg-twitter">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<p>2890 Followers</p>
+						</a>
+					</li>
+					<li>
+						<a class="bg-instagram">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<p>3000 Followers</p>
+						</a>
+					</li>
+					<li>
+						<a class="bg-google">
+							<i class="fa fa-google" aria-hidden="true"></i>
+							<p>1255 Follows</p>
+						</a>
+					</li>
+					
 				</ul>
 			</div>
 		</aside>
@@ -111,9 +140,9 @@
 						<div class="card card-red">
 							<div class="card-block">
 								<div class="stats">
-									<h3>22</h3>
-									<p>PROJECTS</p>
-									<hr>
+									<h3 class="figures">22</h3>
+									<p class="stat">PROJECTS</p>
+									<hr class="w-25p">
 									<small>Last Week: 5</small>
 								</div>
 							</div>
@@ -123,9 +152,9 @@
 						<div class="card card-purple">
 							<div class="card-block">
 								<div class="stats">
-									<h3>22</h3>
-									<p>PROJECTS</p>
-									<hr>
+									<h3 class="figures">22</h3>
+									<p class="stat">PROJECTS</p>
+									<hr class="w-25p">
 									<small>Last Week: 5</small>
 								</div>
 							</div>
@@ -135,9 +164,9 @@
 						<div class="card card-orange">
 							<div class="card-block">
 								<div class="stats">
-									<h3>22</h3>
-									<p>PROJECTS</p>
-									<hr>
+									<h3 class="figures">22</h3>
+									<p class="stat">PROJECTS</p>
+									<hr class="w-25p">
 									<small>Last Week: 5</small>
 								</div>
 							</div>
@@ -147,9 +176,9 @@
 						<div class="card card-green">
 							<div class="card-block">
 								<div class="stats">
-									<h3>22</h3>
-									<p>PROJECTS</p>
-									<hr>
+									<h3 class="figures">22</h3>
+									<p class="stat">PROJECTS</p>
+									<hr class="w-25p">
 									<small>Last Week: 5</small>
 								</div>
 							</div>
@@ -219,6 +248,8 @@
 		<!-- main contents ends here -->
 	</main>
 
+	</div>
+
 	
 
 
@@ -232,15 +263,13 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="assets/plugins/mdb/js/mdb.min.js"></script>
   <!-- APP JS -->
-  <!-- <script type="text/javascript" src="assets/js/app.js"></script> -->
+   <script type="text/javascript" src="assets/js/main.js"></script> 
 
   <script type="text/javascript">
 
-    document.onreadystatechange = function(){
-        if (document.readyState === 'complete') {
-             //app.textTruncator();
-        }
-    };
+    $(document).ready(function(){
+		app.sidebarController();
+	});
 
   </script>
 
