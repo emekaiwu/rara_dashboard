@@ -1,0 +1,148 @@
+html,body .wrapper{
+	margin: 0;
+	padding:0;
+	height: 100%;
+	width:100%;
+	background: #EEE;
+}
+/*-================================
+header styling starts here
+==================================*/
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 52px;
+}
+.navbar-default{
+	background-color: #222;
+	border-color: #222;
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:focus,
+ .navbar-default .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: #e7e7e7;
+}
+/*-================================
+header styling ends here
+==================================*/
+
+
+
+/*main styling starts here*/
+main{
+	height:calc(100% - 52px);
+}
+/*-================================
+main styling ends here
+==================================*/
+
+
+
+
+/*-================================
+aside starts here
+==================================*/
+#leftSidebar{
+	position: absolute;
+	height: 100%;
+	background: #FFF;
+	width: 250px;
+	z-index: 3;
+}
+#leftSidebar ul{
+	margin: 0;
+	padding:0;
+	list-style-type: none;
+	height: 100%;
+
+}
+#leftSidebar>ul > li >a{
+	display: block;
+	width: 100%;
+	color: #222;
+	text-decoration: none;
+}
+#leftSidebar [class*='fa-']{
+	float: left;
+	padding: 10px;
+	width: 70px;
+	line-height: 30px;
+	text-align: center;
+}
+#leftSidebar li p{
+	padding: 10px;
+	line-height: 30px;
+}
+
+/*-================================
+aside ends here
+==================================*/
+
+
+/*-================================
+main contents starts here
+==================================*/
+#contents{
+	width: calc(100% - 250px);
+	margin-left: auto;
+	height: 100%;
+	padding: 20px;
+}
+.inner-section{
+	margin-bottom: 20px;
+}
+/*-================================
+main contents ends here
+==================================*/
+
+
+/*-================================
+card component starts here
+==================================*/
+.card{
+	min-height: 150px;
+	background: #FFF;
+}
+.card .block{
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	display:flex;
+}
+.card-bg-yellow{
+	background:#fdad2a;
+}
+.card-bg-blue{
+	background:#010028;
+}
+.card-bg-red{
+	background:#fa424a;
+}
+.card-bg-purple{
+	background:#ac6bec;
+}
+.card .card-head{
+	padding: 20px 20px 0 20px;
+}
+.card .card-body{
+	padding: 0 20px 20px 20px;
+}
+#no-chart{
+	height: 200px;
+	background:#EEE;
+	width:100%;
+	opacity: 0.35;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#no-chart i{
+	font-size: 80px
+}
